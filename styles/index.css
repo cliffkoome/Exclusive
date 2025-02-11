@@ -54,8 +54,8 @@ body {
 
 
 .nav-bar-div {
-  width: 80%;
-  height: 30%;
+  width: 85%;
+  height: 50%;
   margin-bottom: 10px;
   display: flex;
   align-items: center;
@@ -83,16 +83,40 @@ body {
 }
 
 .nav-bar-div-search {
-  height: 80%;
+  height: 100%;
   background-color: #F5F5F5;
-  border: none;
+  display: flex;
+  justify-content: end;
+  align-items: center;
   padding-left: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-right: 10px;
+}
+
+.nav-bar-div-search-div-1 {
+  height: 80%;
+  border: none;
+  background-color: #F5F5F5;
 }
 
 .nav-bar-div-search::placeholder {
   font-size: 10px;
+}
+
+.nav-bar-div-search-div-1:focus {
+  outline: none;
+}
+
+.fa-solid {
+  transition: all 0.15s;
+}
+
+.fa-solid:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.fa-heart {
+  margin-right: 10px;
 }
 
 .hero-section {
