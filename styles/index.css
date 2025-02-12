@@ -98,7 +98,7 @@ body {
   background-color: #F5F5F5;
 }
 
-.nav-bar-div-search::placeholder {
+.nav-bar-div-search-div-1::placeholder {
   font-size: 10px;
 }
 
@@ -154,6 +154,15 @@ body {
 
 .shop-preview {
   width: 80%;
+}
+
+.swiper-pagination .swiper-pagination-bullet{
+  background-color: white;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active{
+  background-color: #DB4444;
+  border: 2px solid white;
 }
 
 .my-swiper-container {
