@@ -228,6 +228,18 @@ body {
   align-items: center;
 }
 
+.categories-header {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Segoe UI';
+  display: flex;
+  justify-content: space-between;
+  color: #DB4444;
+  height: 35%;
+  width: 60%;
+  align-items: center;
+}
+
 .section-header-color {
   width: 20%;
   height: 100%;
@@ -235,9 +247,22 @@ body {
   border-radius: 5px;
 }
 
+.categories-header-color {
+  width: 17%;
+  height: 100%;
+  background-color: #DB4444;
+  border-radius: 5px;
+}
+
+.categories-section-items-top {
+  display: flex;
+  flex-direction: row;
+}
+
 .section-title {
   font-size: 28px;
   font-weight: bold;
+  white-space: nowrap;
 }
 
 .left-right-1 {
@@ -320,6 +345,29 @@ body {
 
 .item-card-info-rating {
   font-size: 14px;
+}
+
+.view-products-btn-div {
+  margin-left: 110px;
+  width: 80%;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.view-products-btn {
+  background-color: #DB4444;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 2px;
+  transition: all 0.15;
+}
+
+.view-products-btn:hover {
+  cursor: pointer;
+  transform: scale(1.02);
 }
 
 .categories-section-items {
