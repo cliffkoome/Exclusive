@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
   <script src="scripts/index.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/duration.js"></script>
+  <script src="scripts/day.js" defer></script>
 </head>
 <body>
   <div class="header">
@@ -90,7 +93,7 @@
           </div>
         </div>
         <div class="left-right-1">
-          03:23:19:56
+          <span class="days">03</span>:<span class="hrs">23</span>:<span class="mins">19</span>:<span class="secs">56</span>
         </div>
       </div>
       <div class="right">
@@ -490,7 +493,38 @@
   </div>
 
   <div class="categories-card">
-    
+    <div class="categories-card-info">
+      <div class="categories-card-info-header">
+        Categories
+      </div>
+      <div class="categories-card-info-title">
+        Enhance Your Music Experience
+      </div>
+      <div class="time">
+        <div class="time-day">
+          <span style="font-weight: bold;" class="days2"></span>
+          <span style="display: block;">Days</span>
+        </div>
+        <div class="time-day">
+          <span style="font-weight: bold;" class="hrs2"></span>
+          <span style="display: block;">Hours</span>
+        </div>
+        <div class="time-day">
+          <span style="font-weight: bold;" class="mins2"></span>
+          <span style="display: block;">Minutes</span>
+        </div>
+        <div class="time-day">
+          <span style="font-weight: bold;" class="secs2"></span>
+          <span style="display: block;">Seconds</span>
+        </div>
+      </div>
+      <div class="buy-now">
+        <button class="buy-now-btn">Buy Now!</button>
+      </div>
+    </div>
+    <div class="categories-card-image">
+      <img src="images/product-40.png" class="categories-card-img">
+    </div>
   </div>
 
   <div class="products">
@@ -947,6 +981,10 @@
         <div class="services-item-info-desc">We return money within 30 days</div>
       </div>
     </div>
+  </div>
+
+  <div class="go-up">
+    <i class="fa-solid fa-arrow-up"></i>
   </div>
 
   <div class="footer">

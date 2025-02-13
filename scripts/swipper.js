@@ -11,7 +11,7 @@ const swiper = new Swiper('.swiper', {
 });
 
 const productsSwiper = new Swiper('.product-swiper', {
-  slidesPerView: 5.5,
+  slidesPerView: 4.5,
   direction: 'horizontal',
   loop: false,
   grid: {
@@ -45,16 +45,4 @@ document.querySelector('.js-products-arrow-right').addEventListener('click', () 
 
 document.querySelector('.js-products-arrow-left').addEventListener('click', () => {
   productsSwiper2.slidePrev();
-});
-
-const heartElement = document.querySelectorAll('.like-btn .fa-heart');
-
-heartElement.forEach(button => {
-  button.addEventListener('click', () => {
-    if (button.classList.contains('fa-heart-clicked')) {
-      button.classList.remove('fa-heart-clicked');
-    } else {
-      button.classList.add('fa-heart-clicked');
-    }
-  });
 });
