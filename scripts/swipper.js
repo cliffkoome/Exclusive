@@ -31,6 +31,26 @@ const productsSwiper2  = new Swiper('.product-swipper-2', {
   spaceBetween: 20,
 })
 
+const wishlistSwiper = new Swiper('.wishlist', {
+  slidesPerView: 4,
+  direction: 'horizontal',
+  loop: false,
+  grid: {
+    rows: 1,
+    fill: 'row',
+  },
+})
+
+const justForYou = new Swiper('.just-for-you', {
+  slidesPerView: 4,
+  direction: 'horizontal',
+  loop: false,
+  grid: {
+    rows: 1,
+    fill: 'row',
+  },
+})
+
 document.querySelector('.js-today-arrow-right').addEventListener('click', () => {
   productsSwiper.slideNext();
 });

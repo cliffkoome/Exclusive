@@ -1,0 +1,84 @@
+body {
+  padding-top: 150px;
+}
+.hero-section {
+  width: 85%;
+  height: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-section-top {
+  height: fit-content;
+  margin-bottom: 60px;
+  display: flex;
+}
+
+.hero-section-top-header {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-section-top-header {
+  font-size: 24px;
+}
+
+.move-to-bag-btn {
+  height: fit-content;
+  padding: 16px 32px;
+  border: 1px solid rgb(121, 121, 121);
+  border-radius: 3px;
+  background-color: white;
+}
+
+.wishlist-container {
+  height: 30%;
+  margin-bottom: 60px;
+}
+
+.just-for-you-container {
+  height: 47%;
+}
+
+.just-for-you-top {
+  height: 20%;
+  margin-bottom: 55px;
+  display: flex;
+  flex-direction: row;
+}
+
+.just-for-you-top-left,
+.just-for-you-top-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.just-for-you-top-left-color {
+  background-color: #DB4444;
+  width: 4%;
+  height: 70%;
+  border-radius: 5px;
+}
+
+.just-for-you-top-left-title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+.just-for-you-items {
+  height: 63%;
+}
+
+.just-for-you-top-right {
+  justify-content: end;
+}
+
+.see-all-btn {
+  padding: 16px 32px;
+  border: 1px solid rgb(121, 121, 121);
+  border-radius: 3px;
+  background-color: white;
+}
