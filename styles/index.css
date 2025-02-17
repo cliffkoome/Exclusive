@@ -522,59 +522,6 @@
   object-position: 0 10%;
 }
 
-.services {
-  margin-left: 300px;
-  width: 55%;
-  height: 200px;
-  margin-top: 100px;
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-}
-
-.services-item {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.services-item-icon {
-  height: 70%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.services-item-icon .fa-solid {
-  font-size: 35px;
-  color: white;
-  background-color: black;
-  padding: 10px;
-  border-radius: 500px;
-  border: 10px solid #a6a6a6;
-}
-
-.services-item-info {
-  height: 30%;
-}
-
-.services-item-info-desc, 
-.services-item-info-header {
-  height: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.services-item-info-header {
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.services-item-info-desc {
-  font-size: 14px;
-}
-
 .go-up {
   width: 70%;
   height: 50px;
