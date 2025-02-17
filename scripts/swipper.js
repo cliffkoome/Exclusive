@@ -10,7 +10,7 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
-const productsSwiper = new Swiper('.product-swiper', {
+export const productsSwiper = new Swiper('.product-swiper', {
   slidesPerView: 4.5,
   direction: 'horizontal',
   loop: false,
@@ -20,7 +20,7 @@ const productsSwiper = new Swiper('.product-swiper', {
   },
 });
 
-const productsSwiper2  = new Swiper('.product-swipper-2', {
+export const productsSwiper2  = new Swiper('.product-swipper-2', {
   slidesPerView: 4,
   direction: 'horizontal',
   loop: false,
@@ -51,18 +51,13 @@ const justForYou = new Swiper('.just-for-you', {
   },
 })
 
-document.querySelector('.js-today-arrow-right').addEventListener('click', () => {
-  productsSwiper.slideNext();
-});
-
-document.querySelector('.js-today-arrow-left').addEventListener('click', () => {
-  productsSwiper.slidePrev();
-});
-
-document.querySelector('.js-products-arrow-right').addEventListener('click', () => {
-  productsSwiper2.slideNext();
-});
-
-document.querySelector('.js-products-arrow-left').addEventListener('click', () => {
-  productsSwiper2.slidePrev();
-});
+export const memberSwiper = new Swiper('.members-swiper', {
+  slidesPerView: 3,
+  direction: 'horizontal',
+  loop: false,
+  spaceBetween: 50,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+})

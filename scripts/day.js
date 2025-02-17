@@ -1,7 +1,7 @@
 dayjs.extend(dayjs_plugin_duration);
 
-const targetDate = dayjs('2025-02-15T12:40:00');
-const targetDate2 = dayjs('2025-02-16T17:00:00');
+const targetDate = dayjs('2025-02-23T12:40:00');
+const targetDate2 = dayjs('2025-02-24T17:00:00');
 
 function calculateCountDownFlashSales() {
     const now = dayjs();
