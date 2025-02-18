@@ -423,3 +423,12 @@ body {
 .services-item-info-desc {
   font-size: 14px;
 }
+
+.swiper-pagination .swiper-pagination-bullet{
+  background-color: #a6a6a6;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active{
+  background-color: #DB4444;
+  border: 2px solid #a6a6a6;
+}

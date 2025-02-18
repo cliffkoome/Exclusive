@@ -35,15 +35,6 @@
   width: 80%;
 }
 
-.swiper-pagination .swiper-pagination-bullet{
-  background-color: white;
-}
-
-.swiper-pagination .swiper-pagination-bullet-active{
-  background-color: #DB4444;
-  border: 2px solid white;
-}
-
 .my-swiper-container {
   margin-top: 45px;
   margin-left: 40px;

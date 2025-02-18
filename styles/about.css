@@ -148,21 +148,3 @@
   cursor: pointer;
   transform: scale(1.05);
 }
-
-.left-arrow {
-  position: absolute;
-  left: 0px;
-  top: 40%;
-  font-size: 40px;
-  color: blue;
-  z-index: 2; 
-}
-
-.right-arrow {
-  position: absolute;
-  right: 0px;
-  top: 40%;
-  font-size: 40px;
-  z-index: 2;
-  color: blue;
-}
