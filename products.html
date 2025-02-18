@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
-  <link rel="stylesheet" href="styles/contact.css">
+  <title>Products</title>
   <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/products.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+  <script src="scripts/products.js" defer></script>
 </head>
 <body>
   <div class="header">
@@ -46,50 +47,49 @@
     </div>
   </div>
 
-  <div class="hero-section">
-    <div class="hero-section-left">
-      <div class="hero-section-left-container">
-        <div class="hero-section-left-top">
-          <div class="top-header">
-            <i class="fa-solid fa-phone section-icon"></i>
-            Call us
-          </div>
-          <div class="section-desc">
-            <p>We are available 24/7.</p>
-            <p>Phone: +254716111122</p>
-          </div>
+  <div class="products-grid">
+    <div class="item-card">
+      <div class="item-card-image">
+        <img src="images/product-11.jpg" class="item-card-img">
+        <div class="discount">
+          -40%
         </div>
-        <div class="hero-section-left-bottom">
-          <div class="top-header">
-            <i class="fa-regular fa-envelope section-icon"></i>
-            Write To us
-          </div>
-          <div class="section-desc">
-            <p>Fill out our form and we will contact you within 24 hours.</p>
-            <p>Emails: customer@exclusive.com, support@exclusive.com</p>
-          </div>
+        <div class="add-to-cart">
+          Add To Cart
+        </div>
+        <div class="like-btn">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+        <div class="view-btn">
+          <i class="fa-solid fa-eye"></i>
         </div>
       </div>
+      <div class="item-card-info">
+        <div class="item-card-info-name">BMW M3</div>
+        <div class="item-card-info-price">$45,000 <span style="text-decoration: line-through; margin-left: 10px; color: gray;">50,000</span></div>
+        <div class="item-card-info-rating">Rating: 5</div>
+      </div>
     </div>
-    <div class="hero-section-right">
-      <div class="hero-section-right-container">
-        <div class="hero-section-right-top">
-          <div class="top-input1">
-            <input type="text" placeholder="Your Name *" class="primary-input">
-          </div>
-          <div class="top-input2">
-            <input type="email" placeholder="Your Email *" class="primary-input">
-          </div>
-          <div class="top-input3">
-            <input type="text" placeholder="Your Phone *" class="primary-input">
-          </div>
+    <div class="item-card">
+      <div class="item-card-image">
+        <img src="images/product-11.jpg" class="item-card-img">
+        <div class="discount">
+          -40%
         </div>
-        <div class="hero-section-right-middle">
-          <textarea name="user-msg" class="input-msg" placeholder="Your Message"></textarea>
+        <div class="add-to-cart">
+          Add To Cart
         </div>
-        <div class="hero-section-right-bottom">
-          <button class="send-msg-btn">Send Message</button>
+        <div class="like-btn">
+          <i class="fa-solid fa-heart"></i>
         </div>
+        <div class="view-btn">
+          <i class="fa-solid fa-eye"></i>
+        </div>
+      </div>
+      <div class="item-card-info">
+        <div class="item-card-info-name">BMW M3</div>
+        <div class="item-card-info-price">$45,000 <span style="text-decoration: line-through; margin-left: 10px; color: gray;">50,000</span></div>
+        <div class="item-card-info-rating">Rating: 5</div>
       </div>
     </div>
   </div>

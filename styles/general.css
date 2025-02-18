@@ -432,3 +432,7 @@ body {
   background-color: #DB4444;
   border: 2px solid #a6a6a6;
 }
+
+button:hover {
+  cursor: pointer;
+}
