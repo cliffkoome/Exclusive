@@ -13,10 +13,24 @@ function calculateCountDownFlashSales() {
     }
 
     const diffDuration = dayjs.duration(diff);
-    const days = Math.floor(diffDuration.asDays());
-    const hours = diffDuration.hours();
-    const minutes = diffDuration.minutes();
-    const seconds = diffDuration.seconds();
+    let days = Math.floor(diffDuration.asDays());
+    let hours = diffDuration.hours();
+    let minutes = diffDuration.minutes();
+    let seconds = diffDuration.seconds();
+
+    if (days < 10) {
+        days = '0'+ days;
+      }
+      if (hours < 10) {
+        hours = '0'+ hours;
+      }
+      if (minutes < 10) {
+        minutes = '0'+ minutes;
+      }
+      if (seconds < 10) {
+        seconds = '0'+ seconds;
+      }
+    
 
     document.querySelector('.days').innerHTML = days;
     document.querySelector('.hrs').innerHTML = hours;
@@ -34,10 +48,23 @@ function calculateCountDownCategoriesCard() {
   }
 
   const diffDuration = dayjs.duration(diff);
-  const days = Math.floor(diffDuration.asDays());
-  const hours = diffDuration.hours();
-  const minutes = diffDuration.minutes();
-  const seconds = diffDuration.seconds();
+  let days = Math.floor(diffDuration.asDays());
+  let hours = diffDuration.hours();
+  let minutes = diffDuration.minutes();
+  let seconds = diffDuration.seconds();
+
+  if (days < 10) {
+    days = '0'+ days;
+  }
+  if (hours < 10) {
+    hours = '0'+ hours;
+  }
+  if (minutes < 10) {
+    minutes = '0'+ minutes;
+  }
+  if (seconds < 10) {
+    seconds = '0'+ seconds;
+  }
 
   document.querySelector('.days2').innerHTML = days;
   document.querySelector('.hrs2').innerHTML = hours;

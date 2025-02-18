@@ -1,0 +1,119 @@
+.hero-section {
+  margin-top: 110px;
+  height: fit-content;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-section-header {
+  margin-top: 0;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.user-details {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-info, 
+.order-info {
+  width: 40%;
+}
+
+.info-div {
+  height: fit-content;
+}
+
+.info-div p {
+  color: black;
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.primary-input {
+  width: 99%;
+  height: 40px;
+  background-color: #e7e7e7;
+  border: none;
+  border-radius: 3px;
+}
+
+.items {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 5px;
+}
+
+.item-div {
+  width: 70%;
+  height: 50px;
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.image {
+  width: 30%;
+}
+
+.item-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.name {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.total {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex: 1;
+  padding-right: 5px;
+}
+
+.amount {
+  height: fit-content;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.amount-div {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  border-bottom: 1px solid gray;
+}
+
+.coupon {
+  padding: 16px 24px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.btn-1 {
+  padding: 17px 24px;
+  background-color: #d44444;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+.btn-1:hover {
+  cursor: pointer;
+}
+
+.coupon-code {
+  margin-top: 20px;
+}
