@@ -17,7 +17,7 @@ products.forEach((item) => {
       <div class="item-card-image">
         <img src="${image}" class="item-card-img">
         <div class="discount">
-          -${discount*100}%
+          -${(discount*100).toFixed(0)}%
         </div>
         <div class="add-to-cart">
           Add To Cart
@@ -31,7 +31,7 @@ products.forEach((item) => {
       </div>
       <div class="item-card-info">
         <div class="item-card-info-name">${name}</div>
-        <div class="item-card-info-price">$${(priceCents/100)*discount} <span style="text-decoration: line-through; margin-left: 10px; color: gray;">${priceCents/100}</span></div>
+        <div class="item-card-info-price">$${((priceCents/100)-((priceCents/100)*discount)).toFixed(2)} <span style="text-decoration: line-through; margin-left: 10px; color: gray;">${priceCents/100}</span></div>
         <div class="item-card-info-rating">Rating: ${rating*0.1}</div>
       </div>
     </div>
