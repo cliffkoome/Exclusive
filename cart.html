@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="styles/general.css">
   <link rel="stylesheet" href="styles/cart.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+  <script src="scripts/cart.js" type="module" defer></script>
 </head>
 <body>
   <div class="header">
@@ -39,8 +40,12 @@
             <input type="text" placeholder="What are you looking for?" class="nav-bar-div-search-div-1">
             <i class="fa-solid fa-magnifying-glass"></i>
           </div>
-          <i class="fa-solid fa-heart heart-icon" onclick="location='wishlist.html'"> <div class="heart-icon-counter">4</div></i>
-          <i class="fa-solid fa-cart-shopping"></i>
+          <i class="fa-solid fa-heart heart-icon" onclick="location='wishlist.html'">
+            <div class="heart-icon-counter">4</div>
+          </i>
+          <i class="fa-solid fa-cart-shopping cart-icon">
+            <div class="cart-icon-counter">0</div>
+          </i>
         </div>
       </div>
     </div>
@@ -54,54 +59,15 @@
       <div class="section">Subtotal</div>
     </div>
     <div class="items">
-      <div class="item">
-        <div class="item-section1">
-          <div class="item-section item-section-image"><img src="images/product-12.jpg" class="product-img"></div>
-          <div class="item-section item-section-name">LCD Monitor</div>
-        </div>
-        <div class="item-section item-section-price">$650</div>
-        <div class="item-section item-section-quantity">1</div>
-        <div class="item-section item-section-subtotal">$650</div>
-      </div>
-      <div class="item">
-        <div class="item-section1">
-          <div class="item-section item-section-image"><img src="images/product-17.jpg" class="product-img"></div>
-          <div class="item-section item-section-name">X-Box Elite Controller</div>
-        </div>
-        <div class="item-section item-section-price">$120</div>
-        <div class="item-section item-section-quantity">1</div>
-        <div class="item-section item-section-subtotal">$120</div>
-      </div>
+      <h1>Loading...</h1>
     </div>
     <div class="cart-btns">
-      <button>Return To Shop</button>
+      <button onclick="location='products.html'">Return To Shop</button>
       <button>Update Cart</button>
     </div>
   </div>
 
   <div class="order-summary">
-    <div class="coupons">
-      <input type="text" placeholder="Coupon Code" class="coupon-input">
-      <button class="coupon-btn">Apply Coupon</button>
-    </div>
-    <div class="cart-total">
-      <p class="total-header">Cart Total</p>
-      <div class="subtotal">
-        <p>Subtotal:</p>
-        <p>$770</p>
-      </div>
-      <div class="shipping">
-        <p>Shipping:</p>
-        <p>Free</p>
-      </div>
-      <div class="total">
-        <p>Total</p>
-        <p>$770</p>
-      </div>
-      <div class="checkout">
-        <button onclick="location='checkout.html'">Proceed to checkout</button>
-      </div>
-    </div>
   </div>
 
   <div class="footer">
