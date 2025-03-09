@@ -36,9 +36,10 @@ const wishlistSwiper = new Swiper('.wishlist', {
   direction: 'horizontal',
   loop: false,
   grid: {
-    rows: 1,
+    rows: 3,
     fill: 'row',
   },
+  spaceBetween: 20,
 })
 
 const justForYou = new Swiper('.just-for-you', {

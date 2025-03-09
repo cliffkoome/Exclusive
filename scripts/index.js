@@ -1,8 +1,10 @@
 import { productsSwiper, productsSwiper2 } from "./swipper.js";
 import { products } from "../data/products.js";
 import { calculateCartItems, addToCart } from "../data/cart.js";
+import { addToWishlist, removeFromWishlist, wishlist, calculateWishlistItems } from "./wishlist.js"
 
 calculateCartItems();
+calculateWishlistItems();
 
 let flashSalesHTML = '';
 let flashSaleItems = 0;
@@ -30,7 +32,7 @@ products.forEach((item) => {
             Add To Cart
           </div>
           <div class="like-btn">
-            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-heart" data-product-id="${productId}"></i>
           </div>
           <div class="view-btn">
             <i class="fa-solid fa-eye"></i>
@@ -77,7 +79,7 @@ products.forEach(item => {
             Add To Cart
           </div>
           <div class="like-btn">
-            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-heart" data-product-id="${productId}"></i>
           </div>
           <div class="view-btn">
             <i class="fa-solid fa-eye"></i>
@@ -122,7 +124,7 @@ products.forEach(item => {
             Add To Cart
           </div>
           <div class="like-btn">
-            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-heart" data-product-id="${productId}"></i>
           </div>
           <div class="view-btn">
             <i class="fa-solid fa-eye"></i>
@@ -145,11 +147,19 @@ document.querySelector('.js-explore-products').innerHTML = exploreProductsHTML;
 const heartElement = document.querySelectorAll('.like-btn .fa-heart');
 
 heartElement.forEach(button => {
+  const { productId } = button.dataset;
+  if(wishlist.find(item => item.productId === productId)) {
+    button.classList.add('fa-heart-clicked');
+  }
   button.addEventListener('click', () => {
     if (button.classList.contains('fa-heart-clicked')) {
+      removeFromWishlist(productId);
       button.classList.remove('fa-heart-clicked');
+      calculateWishlistItems();
     } else {
+      addToWishlist(productId);
       button.classList.add('fa-heart-clicked');
+      calculateWishlistItems();
     }
   });
 });

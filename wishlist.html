@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,10 @@
   <link rel="stylesheet" href="styles/general.css">
   <link rel="stylesheet" href="styles/wishlist.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
-  <script src="scripts/wishlist.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <script src="scripts/wishlist.js" type="module" defer></script>
 </head>
+
 <body>
   <div class="header">
     <div class="msg-ln">
@@ -41,8 +43,12 @@
             <input type="text" placeholder="What are you looking for?" class="nav-bar-div-search-div-1">
             <i class="fa-solid fa-magnifying-glass"></i>
           </div>
-          <i class="fa-solid fa-heart heart-icon" onclick="location='wishlist.html'"> <div class="heart-icon-counter">4</div></i>
-          <i class="fa-solid fa-cart-shopping" onclick="location='cart.html'"></i>
+          <i class="fa-solid fa-heart heart-icon" onclick="location='wishlist.html'">
+            <div class="heart-icon-counter">0</div>
+          </i>
+          <i class="fa-solid fa-cart-shopping cart-icon" onclick="location='cart.html'">
+            <div class="cart-icon-counter">0</div>
+          </i>
         </div>
       </div>
     </div>
@@ -50,197 +56,14 @@
 
   <div class="hero-section">
     <div class="hero-section-top">
-      <div class="hero-section-top-header">Wishlist (4) 
-        <button class="move-to-bag-btn">Move All To Bag</button></div>
+      <div class="hero-section-top-header">Wishlist
+        <button class="move-to-bag-btn">Move All To Bag</button>
+      </div>
     </div>
     <div class="wishlist-container">
       <div class="wishlist">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="item-card">
-              <div class="item-card-image">
-                <img src="images/product-17.jpg" class="item-card-img">
-                <div class="discount">
-                  -40%
-                </div>
-                <div class="add-to-cart">
-                  Add To Cart
-                </div>
-              </div>
-              <div class="item-card-info">
-                <div class="item-card-info-name">X-Box Elite Controller</div>
-                <div class="item-card-info-price">$120 <span style="text-decoration: line-through; margin-left: 10px; color: gray;">160</span></div>
-                <div class="item-card-info-rating">Rating: 4.5</div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="item-card">
-              <div class="item-card-image">
-                <img src="images/product-17.jpg" class="item-card-img">
-                <div class="discount">
-                  -40%
-                </div>
-                <div class="add-to-cart">
-                  Add To Cart
-                </div>
-              </div>
-              <div class="item-card-info">
-                <div class="item-card-info-name">X-Box Elite Controller</div>
-                <div class="item-card-info-price">$120 <span style="text-decoration: line-through; margin-left: 10px; color: gray;">160</span></div>
-                <div class="item-card-info-rating">Rating: 4.5</div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="item-card">
-              <div class="item-card-image">
-                <img src="images/product-17.jpg" class="item-card-img">
-                <div class="discount">
-                  -40%
-                </div>
-                <div class="add-to-cart">
-                  Add To Cart
-                </div>
-              </div>
-              <div class="item-card-info">
-                <div class="item-card-info-name">X-Box Elite Controller</div>
-                <div class="item-card-info-price">$120 <span style="text-decoration: line-through; margin-left: 10px; color: gray;">160</span></div>
-                <div class="item-card-info-rating">Rating: 4.5</div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="item-card">
-              <div class="item-card-image">
-                <img src="images/product-17.jpg" class="item-card-img">
-                <div class="discount">
-                  -40%
-                </div>
-                <div class="add-to-cart">
-                  Add To Cart
-                </div>
-              </div>
-              <div class="item-card-info">
-                <div class="item-card-info-name">X-Box Elite Controller</div>
-                <div class="item-card-info-price">$120 <span style="text-decoration: line-through; margin-left: 10px; color: gray;">160</span></div>
-                <div class="item-card-info-rating">Rating: 4.5</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="just-for-you-container">
-      <div class="just-for-you-top">
-        <div class="just-for-you-top-left">
-          <div class="just-for-you-top-left-color"></div>
-          <div class="just-for-you-top-left-title">Just For You</div>
-        </div>
-        <div class="just-for-you-top-right">
-          <button class="see-all-btn">See All</button>
-        </div>
-      </div>
-      <div class="just-for-you-items">
-        <div class="just-for-you">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="item-card">
-                <div class="item-card-image">
-                  <img src="images/product-17.jpg" class="item-card-img">
-                  <div class="discount">
-                    -40%
-                  </div>
-                  <div class="add-to-cart">
-                    Add To Cart
-                  </div>
-                  <div class="like-btn">
-                    <i class="fa-solid fa-heart"></i>
-                  </div>
-                  <div class="view-btn">
-                    <i class="fa-solid fa-eye"></i>
-                  </div>
-                </div>
-                <div class="item-card-info">
-                  <div class="item-card-info-name">X-Box Elite Controller</div>
-                  <div class="item-card-info-price">$120 <span style="text-decoration: line-through; margin-left: 10px; color: gray;">160</span></div>
-                  <div class="item-card-info-rating">Rating: 4.5</div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="item-card">
-                <div class="item-card-image">
-                  <img src="images/product-9.jpg" class="item-card-img">
-                  <div class="discount">
-                    -40%
-                  </div>
-                  <div class="add-to-cart">
-                    Add To Cart
-                  </div>
-                  <div class="like-btn">
-                    <i class="fa-solid fa-heart"></i>
-                  </div>
-                  <div class="view-btn">
-                    <i class="fa-solid fa-eye"></i>
-                  </div>
-                </div>
-                <div class="item-card-info">
-                  <div class="item-card-info-name">AK-900 Wired Keyboard</div>
-                  <div class="item-card-info-price">$60 <span style="text-decoration: line-through; margin-left: 10px; color: gray;">90</span></div>
-                  <div class="item-card-info-rating">Rating: 4</div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="item-card">
-                <div class="item-card-image">
-                  <img src="images/product-10.jpg" class="item-card-img">
-                  <div class="discount">
-                    -40%
-                  </div>
-                  <div class="add-to-cart">
-                    Add To Cart
-                  </div>
-                  <div class="like-btn">
-                    <i class="fa-solid fa-heart"></i>
-                  </div>
-                  <div class="view-btn">
-                    <i class="fa-solid fa-eye"></i>
-                  </div>
-                </div>
-                <div class="item-card-info">
-                  <div class="item-card-info-name">IPS LCD Gaming Monitor</div>
-                  <div class="item-card-info-price">$370 <span style="text-decoration: line-through; margin-left: 10px; color: gray;">400</span></div>
-                  <div class="item-card-info-rating">Rating: 5</div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="item-card">
-                <div class="item-card-image">
-                  <img src="images/product-11.jpg" class="item-card-img">
-                  <div class="discount">
-                    -40%
-                  </div>
-                  <div class="add-to-cart">
-                    Add To Cart
-                  </div>
-                  <div class="like-btn">
-                    <i class="fa-solid fa-heart"></i>
-                  </div>
-                  <div class="view-btn">
-                    <i class="fa-solid fa-eye"></i>
-                  </div>
-                </div>
-                <div class="item-card-info">
-                  <div class="item-card-info-name">BMW M3</div>
-                  <div class="item-card-info-price">$45,000 <span style="text-decoration: line-through; margin-left: 10px; color: gray;">50,000</span></div>
-                  <div class="item-card-info-rating">Rating: 5</div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="swiper-wrapper js-wishlist">
+          <h1>Loading...</h1>
         </div>
       </div>
     </div>
@@ -268,7 +91,7 @@
           <div class="footer-top-div-header">
             Support
           </div>
-          <p>111 Bijoy sarani, Dhaka,  DH 1515, Bangladesh.</p>
+          <p>111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</p>
           <p>exclusive@gmail.com</p>
           <p>+88015-88888-9999</p>
         </div>
@@ -321,4 +144,5 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="scripts/swipper.js" type="module"></script>
 </body>
+
 </html>

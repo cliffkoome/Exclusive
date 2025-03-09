@@ -1,12 +1,13 @@
 import { cart, removeFromCart, calculateCartItems } from "../data/cart.js";
+import { calculateWishlistItems } from "./wishlist.js"
 
 renderCart();
 renderOrderSummary();
 calculateCartItems();
+calculateWishlistItems();
 
 function renderCart() {
   let cartHTML='';
-  console.log(cart);
 
   if(cart.length < 1) {
     cartHTML += '<h1 style="font-size: 60px; margin-top: 100px; margin-bottom: 100px">Cart is Empty<h1>';

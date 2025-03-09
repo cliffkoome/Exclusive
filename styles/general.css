@@ -360,17 +360,7 @@ body {
   position: relative;
 }
 
-.heart-icon-counter {
-  position: absolute;
-  color: white;
-  background-color: #DB4444;
-  border-radius: 100px;
-  top: -8px;
-  right: -10px;
-  padding: 4px 6px;
-  font-size: 8px;
-}
-
+.heart-icon-counter,
 .cart-icon-counter {
   position: absolute;
   color: white;
