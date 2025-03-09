@@ -26,7 +26,7 @@ export function removeFromCart(removedProductId) {
   calculateCartItems();
 }
 
-function getMatchingItem(addedProductId) {
+export function getMatchingItem(addedProductId) {
   let matchingItem;
   products.forEach((product) => {   
     if (addedProductId === product.productId) {
@@ -44,14 +44,7 @@ function loadFromStorage() {
   cart = JSON.parse(localStorage.getItem('exclusive'));
 
   if (!cart) {
-    cart = [{
-      productId: 'product-21',
-      name:'Black Leather Shoes',
-      priceCents: 5500,
-      discount: 0.1,
-      rating: 50,
-      image: 'images/product-29.jpg'
-    }];
+    cart = [];
   }
 }
 
@@ -63,5 +56,4 @@ export function calculateCartItems() {
   });
 
   document.querySelector('.cart-icon-counter').innerHTML = cartCount;
-  console.log(cartCount);
 }
