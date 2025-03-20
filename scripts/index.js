@@ -144,24 +144,28 @@ products.forEach(item => {
 
 document.querySelector('.js-explore-products').innerHTML = exploreProductsHTML;
 
-const heartElement = document.querySelectorAll('.like-btn .fa-heart');
-
-heartElement.forEach(button => {
-  const { productId } = button.dataset;
-  if(wishlist.find(item => item.productId === productId)) {
-    button.classList.add('fa-heart-clicked');
-  }
-  button.addEventListener('click', () => {
-    if (button.classList.contains('fa-heart-clicked')) {
-      removeFromWishlist(productId);
-      button.classList.remove('fa-heart-clicked');
-      calculateWishlistItems();
-    } else {
-      addToWishlist(productId);
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.like-btn .fa-heart').forEach(button => {
+    const { productId } = button.dataset;
+    if (wishlist.find(item => item.productId === productId)) {
       button.classList.add('fa-heart-clicked');
-      calculateWishlistItems();
     }
   });
+});
+
+document.addEventListener('click', (event) => {
+  const button = event.target.closest('.like-btn .fa-heart');
+  if (!button) return;
+  const { productId } = button.dataset;
+  if (button.classList.contains('fa-heart-clicked')) {
+    removeFromWishlist(productId);
+    button.classList.remove('fa-heart-clicked');
+  } else {
+    addToWishlist(productId);
+    button.classList.add('fa-heart-clicked');
+  }
+
+  calculateWishlistItems();
 });
 
 document.querySelector('.fa-arrow-up').addEventListener('click', () => {
@@ -187,9 +191,9 @@ document.querySelector('.js-products-arrow-left').addEventListener('click', () =
   productsSwiper2.slidePrev();
 });
 
-document.querySelectorAll('.add-to-cart').forEach((product) => {
-  const { productId } = product.dataset;
-  product.addEventListener('click', () => {
-    addToCart(productId);
-  })
-})
+document.addEventListener('click', (event) => {
+  const button = event.target.closest('.add-to-cart');
+  if (!button) return;
+  const { productId } = button.dataset;
+  addToCart(productId);
+});
